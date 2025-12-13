@@ -1,1 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pankaj Wavre — Analog IC Design Portfolio</title>
+  <meta name="description" content="Analog IC Design • CMOS Circuit Design • Mixed-Signal Systems — portfolio projects and Cadence-based verification results." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="dot"></span>
+        <a class="brand-name" href="#top">Pankaj Wavre</a>
+      </div>
+      <nav class="links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a class="btn small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="kicker">Analog IC Design Portfolio</p>
+          <h1>
+            Analog IC Design • CMOS Circuit Design • <span class="neon">Mixed-Signal Systems</span>
+          </h1>
+          <p class="sub">
+            Transistor-level design and verification in <strong>Cadence Virtuoso / Spectre</strong>.
+            Focused on amplifiers, switched-capacitor systems, and sigma-delta architectures.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="https://www.linkedin.com/in/pankajwavre/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/pankajwavre" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn ghost" href="#projects">View Projects</a>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Cadence Virtuoso</span>
+            <span class="chip">Spectre</span>
+            <span class="chip">CMOS</span>
+            <span class="chip">Fully Differential</span>
+            <span class="chip">SC / ΣΔ</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card glow">
+            <div class="card-title">Featured Focus</div>
+            <ul class="card-list">
+              <li>Folded-Cascode Fully Differential OTA</li>
+              <li>Bandpass ΣΔ Modulator (Gm-C)</li>
+              <li>Switched-Capacitor Integrator / Filter</li>
+              <li>Class-AB Output Stage OTA</li>
+              <li>Custom Op-Amp Design</li>
+              <li>Bias / Regulator Circuits</li>
+            </ul>
+            <div class="divider"></div>
+            <div class="mini">
+              <div class="mini-item">
+                <div class="mini-k">Theme</div>
+                <div class="mini-v">Black + Neon Green</div>
+              </div>
+              <div class="mini-item">
+                <div class="mini-k">Goal</div>
+                <div class="mini-v">Recruiter-friendly</div>
+              </div>
+              <div class="mini-item">
+                <div class="mini-k">Style</div>
+                <div class="mini-v">Clean + Technical</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Six curated projects with schematics, testbenches, and simulation results.</p>
+        </div>
+
+        <div class="grid">
+
+          <!-- 1 -->
+          <article class="proj">
+            <div class="proj-top">
+              <h3>Bandpass Sigma-Delta Modulator (Gm-C)</h3>
+              <span class="tag">Mixed-Signal</span>
+            </div>
+            <p>
+              Continuous-time bandpass ΣΔ modulator using a Gm-C bandpass filter.
+              Includes STF/NTF behavior, AC/transient verification, and noise shaping results.
+            </p>
+            <div class="proj-links">
+              <a class="btn small" href="https://github.com/pankjawavre/analog-ic-portfolio/tree/main/bandpass-sigma-delta-modulator" target="_blank" rel="noreferrer">Open on GitHub</a>
+              <a class="btn small ghost" href="#contact">Ask for details</a>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="proj">
+            <div class="proj-top">
+              <h3>Folded-Cascode Fully Differential OTA</h3>
+              <span class="tag">Analog</span>
+            </div>
+            <p>
+              High-gain folded-cascode OTA with class-AB output stage.
+              Verified with AC gain/phase, CMRR, PSRR, transient response, and slew rate.
+            </p>
+            <div class="proj-links">
+              <a class="btn small" href="https://github.com/pankjawavre/analog-ic-portfolio/tree/main/folded-cascode-ota" target="_blank" rel="noreferrer">Open on GitHub</a>
+              <a class="btn small ghost" href="#skills">Skills used</a>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="proj">
+            <div class="proj-top">
+              <h3>Switched-Capacitor Integrator / Filter</h3>
+              <span class="tag">SC</span>
+            </div>
+            <p>
+              Non-overlapping clocked SC integrator verified in time domain across multiple input frequencies.
+              Includes comparison testbench and transient plots.
+            </p>
+            <div class="proj-links">
+              <a class="btn small" href="https://github.com/pankjawavre/analog-ic-portfolio/tree/main/switched-capacitor-filter" target="_blank" rel="noreferrer">Open on GitHub</a>
+              <a class="btn small ghost" href="#about">Course context</a>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="proj">
+            <div class="proj-top">
+              <h3>Class-AB Output Stage OTA</h3>
+              <span class="tag">Large-Signal</span>
+            </div>
+            <p>
+              Class-AB output stage amplifier verification: transient response at multiple Vcm values, unity-gain tests,
+              and slew-rate measurement under capacitive load.
+            </p>
+            <div class="proj-links">
+              <a class="btn small" href="https://github.com/pankjawavre/analog-ic-portfolio/tree/main/folded-cascode-ota" target="_blank" rel="noreferrer">Open on GitHub</a>
+              <a class="btn small ghost" href="#contact">Request report</a>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="proj">
+            <div class="proj-top">
+              <h3>Custom Op-Amp Design</h3>
+              <span class="tag">Op-Amp</span>
+            </div>
+            <p>
+              End-to-end op-amp design: architecture selection, biasing, stability checks, and testbench-driven verification
+              in Cadence.
+            </p>
+            <div class="proj-links">
+              <a class="btn small" href="https://github.com/pankjawavre/analog-ic-portfolio" target="_blank" rel="noreferrer">Open Portfolio Repo</a>
+              <a class="btn small ghost" href="#contact">Ask for slides</a>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="proj">
+            <div class="proj-top">
+              <h3>Bias / Regulator Circuits</h3>
+              <span class="tag">Biasing</span>
+            </div>
+            <p>
+              Bias generation and regulator building blocks used across projects, including current mirrors,
+              bias rails, and supply-sensitivity considerations.
+            </p>
+            <div class="proj-links">
+              <a class="btn small" href="https://github.com/pankjawavre/analog-ic-portfolio" target="_blank" rel="noreferrer">Open Portfolio Repo</a>
+              <a class="btn small ghost" href="#skills">See skill map</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="note">
+          <span class="neon">Tip:</span> Each project folder includes schematics and results images with a recruiter-friendly README.
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>What I used across the portfolio.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill-card">
+            <h4>Analog Design</h4>
+            <ul>
+              <li>OTA / Op-Amp architectures</li>
+              <li>Biasing & current mirrors</li>
+              <li>Stability concepts (gain/phase)</li>
+              <li>Fully differential signal paths</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Verification</h4>
+            <ul>
+              <li>AC gain/phase, transient</li>
+              <li>CMRR / PSRR evaluation</li>
+              <li>Slew rate & unity-gain tests</li>
+              <li>Loop behavior (STF/NTF)</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Tools</h4>
+            <ul>
+              <li>Cadence Virtuoso</li>
+              <li>Spectre / ADE</li>
+              <li>Waveform analysis</li>
+              <li>Documentation for handoff</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>Quick context.</p>
+        </div>
+
+        <div class="about">
+          <p>
+            I build and verify transistor-level analog/mixed-signal blocks in CMOS, with emphasis on clean testbenches,
+            stability checks, and readable documentation for review and handoff.
+          </p>
+          <p class="muted">
+            Note: Source schematics/layout files are often course/IP-restricted, so this site focuses on architecture,
+            testbenches, and simulation results.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Best ways to reach me.</p>
+        </div>
+
+        <div class="contact">
+          <a class="btn" href="https://www.linkedin.com/in/pankajwavre/" target="_blank" rel="noreferrer">Message on LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/pankjawavre" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Pankaj Wavre</div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
