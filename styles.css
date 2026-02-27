@@ -48,7 +48,7 @@ body {
 }
 
 .section-head {
-  max-width: 700px;
+  max-width: 720px;
   margin-bottom: 56px;
 }
 
@@ -140,7 +140,7 @@ body {
 
 .sub {
   color: var(--muted);
-  max-width: 560px;
+  max-width: 600px;
   margin-bottom: 28px;
 }
 
@@ -155,6 +155,7 @@ body {
   text-decoration: none;
   margin-right: 12px;
   box-shadow: 0 0 20px var(--neon-soft);
+  transition: transform 0.15s ease;
 }
 
 .btn:hover {
@@ -165,11 +166,13 @@ body {
   background: transparent;
   color: var(--neon);
   border: 1px solid var(--neon);
+  box-shadow: none;
 }
 
 .btn.small {
   padding: 8px 14px;
   font-size: 13px;
+  margin-right: 0;
 }
 
 .cta-row {
@@ -189,6 +192,16 @@ body {
   border-radius: 999px;
   font-size: 13px;
   color: var(--muted);
+}
+
+/* ---------- VERIFICATION STRIP ---------- */
+.verify-strip {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--neon);
 }
 
 /* ---------- CARD ---------- */
@@ -253,6 +266,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.proj:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px var(--neon-soft);
 }
 
 .proj-top {
@@ -260,6 +279,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+  gap: 12px;
 }
 
 .proj h3 {
@@ -272,6 +292,7 @@ body {
   border-radius: 6px;
   background: rgba(25, 255, 156, 0.15);
   color: var(--neon);
+  white-space: nowrap;
 }
 
 .proj p {
@@ -280,9 +301,48 @@ body {
   margin-bottom: 16px;
 }
 
+.proj p strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
 .proj-links {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ---------- NOTE ---------- */
+.note {
+  margin-top: 28px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(16, 22, 20, 0.6);
+  color: var(--muted);
+}
+
+/* ---------- METHOD ---------- */
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.method-card {
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 24px;
+  border: 1px solid var(--border);
+}
+
+.method-card h4 {
+  margin-bottom: 8px;
+}
+
+.method-card p {
+  color: var(--muted);
+  font-size: 14px;
 }
 
 /* ---------- SKILLS ---------- */
@@ -314,7 +374,7 @@ body {
 
 /* ---------- ABOUT ---------- */
 .about {
-  max-width: 720px;
+  max-width: 760px;
 }
 
 .muted {
@@ -325,6 +385,7 @@ body {
 .contact {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 /* ---------- FOOTER ---------- */
@@ -337,6 +398,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .footer a {
@@ -350,6 +413,10 @@ body {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
+  .hero {
+    padding: 96px 0 64px;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
   }
@@ -360,6 +427,14 @@ body {
 
   .skills {
     grid-template-columns: 1fr;
+  }
+
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 38px;
   }
 }
 
