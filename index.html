@@ -5,177 +5,225 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pankaj Wavre — Analog IC Design</title>
 
-  <meta name="description" content="CMOS Analog and Mixed-Signal IC Design portfolio — OTAs, Gm-C filters, SC systems, Sigma-Delta architectures, verified in Cadence Virtuoso / Spectre." />
-  <meta name="keywords" content="Analog IC Design, CMOS OTA, Mixed-Signal IC, Cadence Virtuoso, Spectre, Gm-C filter, Switched Capacitor, Sigma Delta, Analog Verification" />
-
+  <meta name="description" content="CMOS Analog and Mixed-Signal IC Design portfolio — OTAs, Gm-C filters, SC systems, Sigma-Delta architectures." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">
-        <span class="dot"></span>
-        <a class="brand-name" href="#top">Pankaj Wavre</a>
-      </div>
 
-      <nav class="links">
-        <a href="#about">About</a>
-        <a href="#skills">Technical Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a class="btn small" href="#contact">Contact</a>
-      </nav>
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <span class="dot"></span>
+      <a class="brand-name" href="#top">Pankaj Wavre</a>
     </div>
-  </header>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="kicker">CMOS Analog & Mixed-Signal IC Design</p>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Technical Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a class="btn small" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-          <h1>
-            Transistor-Level Design & <span class="neon">Verification</span>
-          </h1>
+<main id="top">
 
-          <p class="sub">
-            Designed fully differential OTAs (~70 dB gain, >100 MHz UGB),
-            Gm-C and switched-capacitor filters, and sigma-delta building blocks.
-            Verified using AC, transient, CMRR/PSRR, noise, stability, and PVT analysis
-            in <strong>Cadence Virtuoso / Spectre</strong>.
-          </p>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
 
-          <div class="cta-row">
-            <a class="btn" href="#projects">View Projects</a>
-            <a class="btn ghost" href="#resume">Resume (PDF)</a>
-            <a class="btn ghost" href="https://github.com/pankajwavre" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/pankajwavre/" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
+    <div class="about-grid">
+      <div>
+        <p>
+          I am currently pursuing a Master of Science in Electrical Engineering
+          at Arizona State University, specializing in Analog and Mixed-Signal
+          IC Design. My work focuses on transistor-level CMOS design,
+          OTA architectures, switched-capacitor systems, and sigma-delta
+          modulation.
+        </p>
 
-          <div class="chips">
-            <span class="chip">CMOS</span>
-            <span class="chip">Fully Differential</span>
-            <span class="chip">SC / ΣΔ</span>
-            <span class="chip">Cadence Virtuoso</span>
-            <span class="chip">Spectre</span>
-          </div>
-        </div>
-
-        <div class="card glow">
-          <div class="card-title">Core Design Areas</div>
-          <ul class="card-list">
-            <li>Folded-Cascode Fully Differential OTA</li>
-            <li>Class-AB Output Stage</li>
-            <li>Bandpass ΣΔ Modulator (Gm-C)</li>
-            <li>Switched-Capacitor Integrator / Filter</li>
-            <li>Custom Op-Amp Design</li>
-            <li>Bias / Regulator Circuits</li>
-          </ul>
-        </div>
+        <p class="muted">
+          I emphasize structured verification methodology including AC,
+          transient, CMRR/PSRR, noise, stability, and PVT analysis using
+          Cadence Virtuoso and Spectre.
+        </p>
       </div>
-    </section>
 
-    <!-- ABOUT (FIRST) -->
-    <section id="about" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>About</h2>
-          <p>Quick context and what I focus on.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              I design and verify transistor-level CMOS analog and mixed-signal building blocks
-              with emphasis on robustness, stability, and structured verification methodology.
-            </p>
-            <p class="muted">
-              Note: Source schematics/layout files can be course/IP-restricted, so this portfolio focuses on
-              architecture, testbenches, and simulation results.
-            </p>
-          </div>
-
-          <div class="about-media">
-            <!-- Replace the src with the image link you will share (from your repo).
-                 Example raw URL format:
-                 https://raw.githubusercontent.com/<user>/<repo>/<branch>/path/to/image.png
-            -->
-            <img
-              class="about-img"
-              src="PASTE_YOUR_IMAGE_URL_HERE"
-              alt="Pankaj Wavre — profile / portfolio image"
-              loading="lazy"
-            />
-          </div>
-        </div>
+      <div>
+        <!-- Replace with your image raw GitHub link -->
+        <img class="about-img"
+             src="PASTE_YOUR_GITHUB_RAW_IMAGE_LINK_HERE"
+             alt="Pankaj Wavre"
+             loading="lazy">
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- TECHNICAL SKILLS -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Technical Skills</h2>
-          <p>Analog design, verification, and tools used across projects.</p>
-        </div>
+<!-- TECHNICAL SKILLS -->
+<section id="skills" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Technical Skills</h2>
+    </div>
 
-        <div class="skills">
-          <div class="skill-card">
-            <h4>Analog Design</h4>
-            <ul>
-              <li>OTA / Op-Amp architectures</li>
-              <li>Fully differential design</li>
-              <li>Biasing & current mirrors</li>
-              <li>Stability concepts (gain/phase)</li>
-            </ul>
-          </div>
+    <div class="skills">
 
-          <div class="skill-card">
-            <h4>Verification</h4>
-            <ul>
-              <li>AC gain / phase</li>
-              <li>Transient analysis</li>
-              <li>CMRR / PSRR</li>
-              <li>Noise analysis</li>
-              <li>PVT sweeps</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h4>Tools</h4>
-            <ul>
-              <li>Cadence Virtuoso</li>
-              <li>Spectre / ADE</li>
-              <li>Waveform analysis</li>
-              <li>Documentation / reporting</li>
-            </ul>
-          </div>
-        </div>
+      <div class="skill-card">
+        <h4>Analog Design</h4>
+        <ul>
+          <li>OTA / Op-Amp architectures</li>
+          <li>Fully differential design</li>
+          <li>Biasing & current mirrors</li>
+          <li>Compensation & stability</li>
+        </ul>
       </div>
-    </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Education</h2>
-          <p>Academic background.</p>
+      <div class="skill-card">
+        <h4>Verification</h4>
+        <ul>
+          <li>AC gain / phase analysis</li>
+          <li>Transient analysis</li>
+          <li>CMRR / PSRR evaluation</li>
+          <li>Noise analysis</li>
+          <li>PVT sweeps</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Tools</h4>
+        <ul>
+          <li>Cadence Virtuoso</li>
+          <li>Spectre / ADE</li>
+          <li>Waveform analysis</li>
+          <li>Technical documentation</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Education</h2>
+    </div>
+
+    <div class="edu">
+
+      <div class="edu-item">
+        <div class="edu-top">
+          <h3>Master of Science in Electrical Engineering</h3>
+          <span class="edu-meta">
+            Arizona State University • 2024 – Present
+          </span>
         </div>
+        <p class="muted">
+          Specialization in Analog and Mixed-Signal IC Design.
+        </p>
+      </div>
 
-        <div class="edu">
-          <!-- Replace these with your actual details -->
-          <div class="edu-item">
-            <div class="edu-top">
-              <h3>Your Degree (e.g., M.S. / B.Tech. in ECE)</h3>
-              <span class="edu-meta">University Name • Year</span>
-            </div>
-            <p class="muted">
-              Relevant coursework: Analog IC Design, CMOS, Mixed-Signal, VLSI, etc.
-            </p>
-          </div>
+      <div class="edu-item">
+        <div class="edu-top">
+          <h3>Bachelor of Engineering in Automation and Robotics</h3>
+          <span class="edu-meta">
+            Dr. D. Y. Patil Institute of Engineering, Pimpri • 2020 – 2024
+          </span>
+        </div>
+        <p class="muted">
+          Foundation in electronics, control systems, embedded systems,
+          and signal processing.
+        </p>
+      </div>
 
-          <div class="edu-item">
-            <div class="edu-top">
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Projects</h2>
+    </div>
+
+    <div class="grid">
+
+      <div class="proj">
+        <h3>Folded-Cascode Fully Differential OTA</h3>
+        <p><strong>~70 dB gain • >100 MHz UGB • Class-AB output</strong></p>
+        <p>AC gain/phase, CMRR/PSRR, transient response, slew-rate validation.</p>
+      </div>
+
+      <div class="proj">
+        <h3>Bandpass Sigma-Delta Modulator (Gm-C)</h3>
+        <p><strong>Continuous-time ΣΔ • STF/NTF • Noise shaping</strong></p>
+        <p>Behavioral and transistor-level loop verification.</p>
+      </div>
+
+      <div class="proj">
+        <h3>Switched-Capacitor Integrator</h3>
+        <p><strong>Non-overlap clocks • Time-domain validation</strong></p>
+        <p>SC integrator with multi-frequency transient verification.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>View Resume</h2>
+    </div>
+
+    <a class="btn" href="Resume_Pankaj_Wavre.pdf" download>
+      Download Resume (PDF)
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contact</h2>
+    </div>
+
+    <div class="contact">
+      <a class="btn ghost" href="mailto:your-email@example.com">
+        Email Me
+      </a>
+      <a class="btn ghost" href="https://github.com/pankajwavre" target="_blank">
+        GitHub
+      </a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/pankajwavre/" target="_blank">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Pankaj Wavre</div>
+  </div>
+</footer>
+
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
