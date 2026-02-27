@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pankaj Wavre — Analog IC Design Portfolio</title>
+
   <meta name="description" content="Analog IC Design • CMOS Circuit Design • Mixed-Signal Systems — portfolio projects and Cadence-based verification results." />
+  <meta name="keywords" content="Analog IC Design, CMOS OTA, Mixed-Signal IC, Cadence Virtuoso, Spectre, Gm-C filter, Switched Capacitor, Sigma Delta, Analog Verification" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -17,6 +20,7 @@
       </div>
       <nav class="links">
         <a href="#projects">Projects</a>
+        <a href="#method">Method</a>
         <a href="#skills">Skills</a>
         <a href="#about">About</a>
         <a class="btn small" href="#contact">Contact</a>
@@ -25,22 +29,30 @@
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
+
         <div class="hero-left">
           <p class="kicker">Analog IC Design Portfolio</p>
+
           <h1>
             Analog IC Design • CMOS Circuit Design • <span class="neon">Mixed-Signal Systems</span>
           </h1>
+
           <p class="sub">
-            Transistor-level design and verification in <strong>Cadence Virtuoso / Spectre</strong>.
-            Focused on amplifiers, switched-capacitor systems, and sigma-delta architectures.
+            Transistor-level CMOS analog & mixed-signal design in
+            <strong>Cadence Virtuoso / Spectre</strong>.
+            Designed fully differential OTAs (~70 dB gain, >100 MHz UGB),
+            Gm-C and SC filters, and verified using AC, transient, CMRR/PSRR,
+            noise, and stability analysis.
           </p>
 
           <div class="cta-row">
             <a class="btn" href="https://www.linkedin.com/in/pankajwavre/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="btn ghost" href="https://github.com/pankajwavre" target="_blank" rel="noreferrer">GitHub</a>
             <a class="btn ghost" href="#projects">View Projects</a>
+            <a class="btn ghost" href="Resume_Filter.pdf" download>Download Resume</a>
           </div>
 
           <div class="chips">
@@ -49,6 +61,14 @@
             <span class="chip">CMOS</span>
             <span class="chip">Fully Differential</span>
             <span class="chip">SC / ΣΔ</span>
+          </div>
+
+          <div class="verify-strip" aria-label="Verification coverage">
+            <span>AC Gain / Phase</span>
+            <span>Transient & Slew</span>
+            <span>CMRR / PSRR</span>
+            <span>Loop Stability</span>
+            <span>PVT Sweeps</span>
           </div>
         </div>
 
@@ -63,7 +83,9 @@
               <li>Custom Op-Amp Design</li>
               <li>Bias / Regulator Circuits</li>
             </ul>
+
             <div class="divider"></div>
+
             <div class="mini">
               <div class="mini-item">
                 <div class="mini-k">Theme</div>
@@ -84,6 +106,7 @@
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
         <div class="section-head">
@@ -105,6 +128,7 @@
               <span class="tag">Mixed-Signal</span>
             </div>
             <p>
+              <strong>CT ΣΔ • Gm-C bandpass • STF/NTF + noise shaping.</strong><br>
               Continuous-time bandpass ΣΔ modulator using a Gm-C bandpass filter.
               Includes STF/NTF behavior, AC/transient verification, and noise shaping results.
             </p>
@@ -121,8 +145,9 @@
               <span class="tag">Analog</span>
             </div>
             <p>
-              High-gain folded-cascode OTA with class-AB output stage.
-              Verified with AC gain/phase, CMRR, PSRR, transient response, and slew rate.
+              <strong>~70 dB gain • >100 MHz UGB • Class-AB output.</strong><br>
+              High-gain folded-cascode OTA verified with AC gain/phase, CMRR, PSRR,
+              transient response, and slew rate.
             </p>
             <div class="proj-links">
               <a class="btn small" href="https://github.com/pankajwavre/analog-ic-portfolio/tree/main/folded-cascode-ota" target="_blank" rel="noreferrer">Open on GitHub</a>
@@ -137,6 +162,7 @@
               <span class="tag">SC</span>
             </div>
             <p>
+              <strong>Non-overlap clocks • Time-domain validation • Frequency sweep.</strong><br>
               Non-overlapping clocked SC integrator verified in time domain across multiple input frequencies.
               Includes comparison testbench and transient plots.
             </p>
@@ -153,10 +179,12 @@
               <span class="tag">Large-Signal</span>
             </div>
             <p>
+              <strong>Unity-gain tests • Slew-rate under CL • Vcm sweeps.</strong><br>
               Class-AB output stage amplifier verification: transient response at multiple Vcm values, unity-gain tests,
               and slew-rate measurement under capacitive load.
             </p>
             <div class="proj-links">
+              <!-- Keep your current link; change if your repo folder differs -->
               <a class="btn small" href="https://github.com/pankajwavre/analog-ic-portfolio/tree/main/folded-cascode-ota" target="_blank" rel="noreferrer">Open on GitHub</a>
               <a class="btn small ghost" href="#contact">Request report</a>
             </div>
@@ -169,6 +197,7 @@
               <span class="tag">Op-Amp</span>
             </div>
             <p>
+              <strong>Architecture → biasing → stability → verification.</strong><br>
               End-to-end op-amp design: architecture selection, biasing, stability checks, and testbench-driven verification
               in Cadence.
             </p>
@@ -185,6 +214,7 @@
               <span class="tag">Biasing</span>
             </div>
             <p>
+              <strong>Current mirrors • Bias rails • Supply sensitivity.</strong><br>
               Bias generation and regulator building blocks used across projects, including current mirrors,
               bias rails, and supply-sensitivity considerations.
             </p>
@@ -202,7 +232,40 @@
       </div>
     </section>
 
-    <section id="skills" class="section alt">
+    <!-- METHOD -->
+    <section id="method" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Design Methodology</h2>
+          <p>How I approach analog circuit development.</p>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h4>1. Architecture Selection</h4>
+            <p>Topology tradeoffs, gain-bandwidth targets, noise constraints, headroom planning.</p>
+          </div>
+
+          <div class="method-card">
+            <h4>2. Device-Level Design</h4>
+            <p>Biasing + sizing, operating region checks, common-mode control, stability strategy.</p>
+          </div>
+
+          <div class="method-card">
+            <h4>3. Verification</h4>
+            <p>AC, transient, noise, CMRR/PSRR, loop stability, corners/PVT sweeps.</p>
+          </div>
+
+          <div class="method-card">
+            <h4>4. Documentation</h4>
+            <p>Annotated schematics, clear testbenches, readable plots, reviewer-friendly summaries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Skills</h2>
@@ -243,7 +306,8 @@
       </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
       <div class="container">
         <div class="section-head">
           <h2>About</h2>
@@ -252,8 +316,9 @@
 
         <div class="about">
           <p>
-            I build and verify transistor-level analog/mixed-signal blocks in CMOS, with emphasis on clean testbenches,
-            stability checks, and readable documentation for review and handoff.
+            I design and verify transistor-level CMOS analog and mixed-signal building blocks with emphasis on stability,
+            robustness, and clean verification methodology. My work includes OTAs, Gm-C filters, switched-capacitor systems,
+            and biasing networks validated using structured AC/transient/noise analysis.
           </p>
           <p class="muted">
             Note: Source schematics/layout files are often course/IP-restricted, so this site focuses on architecture,
@@ -263,7 +328,8 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt">
+    <!-- CONTACT -->
+    <section id="contact" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Contact</h2>
@@ -273,6 +339,7 @@
         <div class="contact">
           <a class="btn" href="https://www.linkedin.com/in/pankajwavre/" target="_blank" rel="noreferrer">Message on LinkedIn</a>
           <a class="btn ghost" href="https://github.com/pankajwavre" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn ghost" href="Resume_Filter.pdf" download>Resume (PDF)</a>
         </div>
       </div>
     </section>
