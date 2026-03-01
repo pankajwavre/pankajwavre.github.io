@@ -294,6 +294,25 @@ body{
   font-weight: 900;
 }
 
+.resume-img{
+  width: 100%;
+  max-width: 580px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: block;
+  margin-left: auto;
+  background: rgba(255,255,255,0.02);
+  align-content: center;
+}
+
+.download-btn {
+  display: flex;
+  justify-content: center;
+width: 100%;
+}
+
+
 /* ---------- CONTACT ---------- */
 .contact{
   display: flex;
@@ -325,7 +344,8 @@ body{
 @media (max-width: 900px){
   .about-grid{ grid-template-columns: 1fr; }
   .about-img{ max-width: 420px; margin: 0; }
-
+.download-btn:a{margin-left:100px}
+	
   .grid{ grid-template-columns: 1fr; }
   .skills{ grid-template-columns: 1fr; }
 
@@ -333,5 +353,6 @@ body{
   .hero h1{ font-size: 38px; }
 
   .links a{ margin-left: 12px; }
+
 }
 
