@@ -303,13 +303,11 @@ body{
   display: block;
   margin-left: auto;
   background: rgba(255,255,255,0.02);
-  align-content: center;
-}
+ }
 
 .download-btn {
   display: flex;
   justify-content: center;
-width: 100%;
 }
 
 
@@ -344,6 +342,7 @@ width: 100%;
 @media (max-width: 900px){
   .about-grid{ grid-template-columns: 1fr; }
   .about-img{ max-width: 420px; margin: 0; }
+.resume-img{ max-width: 420px; margin: 0; }
 .download-btn:a{margin-left:100px}
 	
   .grid{ grid-template-columns: 1fr; }
