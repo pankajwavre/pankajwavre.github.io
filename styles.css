@@ -301,13 +301,14 @@ body{
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   display: block;
-  margin-left: auto;
+  margin: 0 auto;
   background: rgba(255,255,255,0.02);
- }
+}
 
-.download-btn {
+.download-btn{
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 
@@ -343,7 +344,6 @@ body{
   .about-grid{ grid-template-columns: 1fr; }
   .about-img{ max-width: 420px; margin: 0; }
 .resume-img{ max-width: 420px; margin: 0; }
-.download-btn:a{margin-left:100px}
 	
   .grid{ grid-template-columns: 1fr; }
   .skills{ grid-template-columns: 1fr; }
