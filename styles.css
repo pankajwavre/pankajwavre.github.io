@@ -165,6 +165,17 @@ body{
   color: var(--text);
   opacity: 0.96;
 }
+/* Optional: add this to styles.css for nicer button alignment in cards */
+.proj-actions{
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.projects-grid{
+  align-items: stretch;
+}
 
 /* ---------- ABOUT ---------- */
 .about-grid{

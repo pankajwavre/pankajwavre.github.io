@@ -153,32 +153,157 @@
   <div class="container">
     <div class="section-head">
       <h2>Projects</h2>
+      <p class="muted">Selected analog / mixed-signal design & verification work (PDF reports).</p>
     </div>
 
-    <div class="grid">
+    <div class="grid projects-grid">
 
+      <!-- 1) LDO -->
       <div class="proj">
-        <h3>Folded-Cascode Fully Differential OTA</h3>
-        <p><strong>~70 dB gain • >100 MHz UGB • Class-AB output</strong></p>
-        <p>AC gain/phase, CMRR/PSRR, transient response, slew-rate validation.</p>
+        <h3>CMOS Low-Dropout Regulator (LDO)</h3>
+        <p><strong>1.6V output • 1–50mA load • Stability & compensation</strong></p>
+        <p>Full-loop verification: line/load regulation, transient response, and phase margin tuning.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/CMOS_Low_Dropout_Regulator_LDO_Design_and_Stability_Analysis.pdf">
+            View Report (PDF)
+          </a>
+        </div>
       </div>
 
+      <!-- 2) Two-stage opamp -->
+      <div class="proj">
+        <h3>Two-Stage CMOS Op-Amp with Frequency Compensation</h3>
+        <p><strong>High gain • RC compensation • Stability optimization</strong></p>
+        <p>AC + transient verification with compensation tuning for improved phase margin.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/Two_Stage_CMOS_OpAmp_With_Frequency_Compensation.pdf">
+            View Report (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- 3) Telescopic cascode diff amp -->
+      <div class="proj">
+        <h3>Telescopic Cascode Differential Amplifier</h3>
+        <p><strong>Bias network • CMRR/PSRR • Slew-rate validation</strong></p>
+        <p>Transistor-level design with bias generation and rejection-ratio characterization.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/Telescopic_Cascode_Differential_Amplifier_with_Bias_Network.pdf">
+            View Report (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- 4) Folded cascode + class AB -->
+      <div class="proj">
+        <h3>Folded-Cascode Amplifier with Class-AB Output Buffer</h3>
+        <p><strong>Wide swing • Class-AB drive • Noise & stability checks</strong></p>
+        <p>Open-loop gain/phase, transient behavior, and supply/common-mode sensitivity checks.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/Folded_Cascode_Amplifier_with_ClassAB_Output_Buffer.pdf">
+            View Report (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- 5) Diff-to-single-ended -->
+      <div class="proj">
+        <h3>Differential-to-Single-Ended Amplifier</h3>
+        <p><strong>CMRR • PSRR • Differential gain</strong></p>
+        <p>Designed and measured rejection ratios across frequency; verified with AC/transient tests.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/Differential_to_Single_Ended_Amplifier_CMRR_PSRR_Analysis.pdf">
+            View Report (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- 6) Common source + cascode -->
+      <div class="proj">
+        <h3>Common-Source and Cascode Amplifiers</h3>
+        <p><strong>Gain comparison • Output resistance • Distortion checks</strong></p>
+        <p>Designed, simulated, and compared CS vs cascode behavior including gain and bandwidth tradeoffs.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/Common%20Source%20and%20Cascode%20Amplifiers.pdf">
+            View Report (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- 7) Beta-multiplier constant-gm reference -->
+      <div class="proj">
+        <h3>CMOS β-Multiplier Constant-gm Current Reference</h3>
+        <p><strong>Bias generation • Startup • VDD/temp sweeps</strong></p>
+        <p>Constant-gm biasing with stability verification across supply and temperature variation.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/CMOS_Beta_Multiplier_Constant_gm_Current_Reference.pdf">
+            View Report (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- 8) PLL + opamp macro modeling -->
+      <div class="proj">
+        <h3>PLL and Op-Amp Macro Modeling</h3>
+        <p><strong>Behavioral blocks • Pole placement • Phase margin</strong></p>
+        <p>System/macro modeling using controlled sources; verified loop dynamics and op-amp targets.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/PLL_and_OpAmp_Macro_Modeling_Using_Behavioral_Blocks.pdf">
+            View Report (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- 9) SC S-to-Z modeling (file 1) -->
+      <div class="proj">
+        <h3>Switched-Capacitor S-to-Z Modeling</h3>
+        <p><strong>Discrete-time analysis • Req equivalence • Verification sweeps</strong></p>
+        <p>Derived and validated SC equivalents with transient verification across multiple frequencies.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/Switched_Capacitor_S_To_Z_Transformation_and_Modeling.pdf">
+            View Report (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- 10) SC S-to-Z modeling (file 2 original name) -->
+      <div class="proj">
+        <h3>S-to-Z Transformations (SC Circuits)</h3>
+        <p><strong>Modeling notes • S-domain to Z-domain • Testbench comparisons</strong></p>
+        <p>Supplementary modeling work and comparisons for switched-capacitor circuit behavior.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/S-To-Z%20Transformations%20and%20S-domain%20Modeling%20of%20SC%20Circuits%20.pdf">
+            View Report (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- 11) Sigma-delta (original name with #) -->
       <div class="proj">
         <h3>Bandpass Sigma-Delta Modulator (Gm-C)</h3>
         <p><strong>Continuous-time ΣΔ • STF/NTF • Noise shaping</strong></p>
-        <p>Behavioral and transistor-level loop verification.</p>
-      </div>
-
-      <div class="proj">
-        <h3>Switched-Capacitor Integrator</h3>
-        <p><strong>Non-overlap clocks • Time-domain validation</strong></p>
-        <p>SC integrator with multi-frequency transient verification.</p>
+        <p>Mixed-signal system design and verification with bandpass Gm-C filtering and loop analysis.</p>
+        <div class="proj-actions">
+          <a class="btn ghost" target="_blank"
+             href="https://raw.githubusercontent.com/pankajwavre/analog-ic-portfolio/main/Project%20%235_%20%20Sigma%20Delta%20Modulator%20Using%20Gm-C%20Bandpass%20Filter.pdf">
+            View Report (PDF)
+          </a>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
-
 <!-- RESUME -->
 <section id="resume" class="section">
   <div class="container">
